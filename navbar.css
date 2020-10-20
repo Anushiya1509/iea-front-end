@@ -1,0 +1,31 @@
+.navbar-default{
+    background-color: rgba(9, 9, 134, 0.986);
+}
+
+.nav.navbar-nav li a {
+  font-size: 15px;
+  color: whitesmoke;
+  padding-right: 0.7rem;
+  padding-bottom: 0rem;
+}
+
+.card {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 25%;
+  margin-right: 25%;
+  width: auto;
+}
+
+footer {
+  bottom: 0px;
+  position: absolute;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+footer, footer li a, footer a {
+  color: whitesmoke;
+  background-color: rgba(3, 3, 122, 0.986);
+}

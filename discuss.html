@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Discussion Forum</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="discuss.css">
+  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+  <script>
+    function myFunction(x) {
+      x.classList.toggle("fa-thumbs-down");
+    }
+  </script>
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <img src="logo.jpeg" class="navbar-brand" style="height: 60px; width: 70px; padding-top: 1rem;">
+      <a class="navbar-brand" href="#" style="color: wheat;">IEA</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="#"><span class="fa fa-home fa-lg"></span> Home</a></li>
+        <li>
+          <a href="#">Projects</a>
+        </li>
+        <li><a href="#">Resources</a></li>
+        <li><a href="#">Discussion Forum</a></li>
+        <li><a href="#"><span class="fa fa-info fa-lg"></span> About us</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+    <div class="breadcrumb">
+        <div class="row">
+            <div class="col-sm-6">
+                <h3 class="h3 p-0">Forum</h3>
+            </div>
+            <div class="col-sm-6">
+                <input type="text" placeholder="Search">
+                <button type="submit" class="btn btn-outline-primary btn-sm">Search</button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="card">
+                <div class="card-header text-light bg-primary align-items-center">        
+                    <div class="h4" id="Role">Username</div> 
+                    <div class="text-light" id="Role">
+                        -Role
+                    </div>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">-----------------------------------Discussion-----------------------------------</h5>
+                </div>
+                <div class="card-footer">
+                  <a href="#" class="card-link"><i onclick="myFunction(this)" style="padding-left: 1rem;" class="fa fa-thumbs-up"></i></a>&emsp;
+                  <a href="#" class="card-link">Reply</a>&emsp;
+                  <p class="text-muted" style="float: right; padding-right: 1rem;">Post date</p>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer page-footer font-small blue pt-4 fixed-bottom">
+  <div class="container-fluid text-center text-md-left">
+      <div class="row">             
+          <div class="col-xs-6">
+              <h5><b>Links</b></h5>
+              <ul class="list-unstyled">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Projects</a></li>
+                  <li><a href="#">Resources</a></li>
+                  <li><a href="#">Discussion Forum</a></li>
+                  <li><a href="#">About us</a></li>
+              </ul>
+          </div>
+          <div class="col-xs-6">
+              <h5><b>Our Address</b></h5>
+              <address>
+                  Madras Institute of Technology,<br>
+                  Chrompet, Chennai-600044<br>
+                  <i class="fa fa-phone fa-lg"></i> : +91-9944545099<br>
+                  <i class="fa fa-envelope fa-lg"></i> : <a href="mailto:anushiya1509@gmail.com">IEA-MIT</a>
+              </address>
+            </div>
+     </div>
+     <div class="row">
+      <div class="footer-copyright text-center py-3">© 2020 Copyright:
+        <a href="https://ieamit.com/"> ieamit.com</a>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

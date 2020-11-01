@@ -52,13 +52,45 @@
             <div class="col-sm-6">
                 <h3 class="h3 p-0">Forum</h3>
             </div>
-            <div class="col-sm-6">
-                <input type="text" placeholder="Search">
-                <button type="submit" class="btn btn-outline-primary btn-sm">Search</button>
+            <div class="offset-2 col-sm-4">
+              <div class="col-sm-6">
+                <button type="submit" class="btn btn-outline-primary" onclick="document.getElementById('CreatePost').style.display=block; document.getElementById('ShowPost').style.display=none;">Create post</button>
+              </div>
+              <div class="col-sm-6">
+                <button type="submit" class="btn btn-outline-primary" onclick="document.getElementById('CreatePost').style.display=none; document.getElementById('ShowPost').style.display=block;">View posts</button>
+              </div>
             </div>
         </div>
     </div>
-    <div class="row">
+    <div class="row" id="CreatePost" hidden>
+      <div class="row">
+        <div class="col-sm-2">
+          <label for="title">Post title </label>
+        </div>
+        <div class="col-sm-4">
+          <input type="text" name="title" id="title">
+        </div>
+      </div>
+    
+      <div class="row">
+        <div class="col">
+          <div class="col-sm-2">
+            <label for="content">Post content </label>
+          </div>
+          <div class="col-sm-4">
+            <textarea name="content" id="content" cols="30" rows="5"></textarea>
+          </div>
+        </div>
+      </div>
+    
+      <div class="row">
+        <div class="col-sm-4">
+          <button type="submit" class="btn btn-primary" style="float: right;">Post</button>
+        </div>
+      </div>
+    
+    </div>
+    <div class="row" id="ShowPost" hidden>
         <div class="col-sm-12">
             <div class="card">
                 <div class="card-header text-light bg-primary align-items-center">        
